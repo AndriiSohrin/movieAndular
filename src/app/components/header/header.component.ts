@@ -16,8 +16,8 @@ export class HeaderComponent implements OnInit {
   }
 
   search() {
-    console.log(this.inputValue);
-    this.dataService.setState(this.inputValue)
+    // console.log(this.inputValue);
+    this.dataService.setState(this.inputValue);
     this.inputValue = '';
   }
 }

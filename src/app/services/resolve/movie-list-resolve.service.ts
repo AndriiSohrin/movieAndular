@@ -6,12 +6,12 @@ import {MovieListService} from '../movie-list.service';
 @Injectable({
   providedIn: 'root'
 })
-export class MovieListResolveService implements Resolve<any[]> {
+export class MovieListResolveService implements Resolve<any> {
 
   constructor(private movieService: MovieListService) {
   }
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any[]> | Promise<any[]> | any[] {
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> | Promise<any> | any {
     const id = route.paramMap.get('id');
     if (id) {
       return this.movieService.getMovieById(id);

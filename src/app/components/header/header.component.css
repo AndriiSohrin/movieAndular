@@ -56,6 +56,13 @@ header {
   line-height: 44px;
   letter-spacing: 1.12px;
 }
+
+.sign-in{
+  color: white;
+  font-size: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+}
 /*=========================== slider setting =====================================*/
 
 .slide {
