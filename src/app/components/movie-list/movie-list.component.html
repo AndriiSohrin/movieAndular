@@ -1,0 +1,19 @@
+<section class="movie-list">
+  <div class="card" style="width: 18rem;" *ngFor="let movie of movieList">
+    <img class="card-img-top" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Card image cap">
+    <div class="card-body">
+      <div class="card-text">{{movie.title}}</div>
+      <div class="release_date">{{movie.release_date}}</div>
+
+     <div>
+       <ngb-rating rate="{{movie.vote_average}}" class="star-rating">
+         <ng-template let-fill="fill" let-index="index">
+           <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+         </ng-template>
+       </ngb-rating>
+     </div>
+
+    </div>
+  </div>
+</section>
+

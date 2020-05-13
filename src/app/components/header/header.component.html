@@ -1,0 +1,88 @@
+<header>
+  <div class="nav-upper">
+    <div class="logo">
+      Movie
+    </div>
+    <div class="input-group input-group-lg main-input">
+      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+             [(ngModel)]="inputValue" (keyup.enter)="search()" >
+      <div class="input-group-prepend">
+        <button class="input-group-text" id="inputGroup-sizing-lg" (click)="search()">Поиск</button>
+      </div>
+    </div>
+    <div class="nav-upper-btn">
+      <a href="#" class="a-main">Sign in</a>
+      <button class="header-btn">Sign Up</button>
+    </div>
+  </div>
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper slide slide-item-1">
+      </div>
+      <div class="carousel-caption title">
+        <h1>The Witcher</h1>
+        <p>Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where
+          people often prove more wicked than beasts.</p>
+        <div class="action">
+          <ul>
+            <li>
+              <button class="header-btn">Watch now</button>
+            </li>
+            <li>
+              <a href="#" class="a-main">View Info</a>
+            </li>
+            <li>
+              <a href="#" class="a-main">Favorites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper slide slide-item-2">
+      </div>
+      <div class="carousel-caption title">
+        <h1>The Avengers</h1>
+        <p>When Thor's evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube
+          called
+          the Tesseract, Nick Fury (Samuel L. Jackson),…</p>
+        <div class="action">
+          <ul>
+            <li>
+              <button class="header-btn">Watch now</button>
+            </li>
+            <li>
+              <a href="#" class="fav-info">View Info</a>
+            </li>
+            <li>
+              <a href="#" class="fav-info">Favorites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper slide slide-item-3">
+      </div>
+      <div class="carousel-caption title">
+        <h1>Spider-man</h1>
+        <p>Spider-Man: Far From Home is a 2019 American superhero </p>
+        <div class="action">
+          <ul>
+            <li>
+              <button class="header-btn">Watch now</button>
+            </li>
+            <li>
+              <a href="#" class="a-main">View Info</a>
+            </li>
+            <li>
+              <a href="#" class="a-main">Favorites</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</header>
+
+<router-outlet></router-outlet>

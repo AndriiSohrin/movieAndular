@@ -1,0 +1,67 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .movie-list {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: auto;
+  }
+}
+
+/*===================card setting=============================*/
+
+.movie-list :hover.card{
+cursor: pointer;
+opacity: 0.7;
+}
+
+.card {
+  margin: 10px 10px;
+}
+
+.card-body{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: lightcyan;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.release_date{
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: right;
+}
+
+/*=====================Star rating setting===============================*/
+
+.star {
+  font-size: 1.5rem;
+  color: #b0c4de;
+}
+.filled {
+  color: #1e90ff;
+}
+.bad {
+  color: #deb0b0;
+}
+.filled.bad {
+  color: #ff1e1e;
+}
+
+.star-rating{
+  margin: auto;
+}
+

@@ -1,0 +1,25 @@
+.movie-list{
+  max-width: 1600px;
+  margin: auto;
+  background-color: #2B3C46;
+}
+/deep/ .pagination-block li a{
+  background-color: #2B3C46;
+  color: white;
+}
+
+
+.pagination-block{
+  width:100% ;
+padding-top: 5px;
+}
+.pagination{
+  max-width: max-content;
+  margin: auto;
+}
+
+@media (max-width: 1080px) {
+  .pagination-block{
+    width: 40%;
+  }
+}

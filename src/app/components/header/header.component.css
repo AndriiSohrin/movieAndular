@@ -1,0 +1,178 @@
+header {
+  max-width: 1920px;
+  max-height: 1080px;
+  margin: auto;
+  position: relative;
+}
+/*================================ Nav setting ========================================*/
+.logo {
+  color: #ffffff;
+  font-family: "Tw Cen MT - Condensed Extra Bold", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 64.29px;
+  text-transform: uppercase;
+  letter-spacing: 1.37px;
+}
+
+.main-input {
+ max-width: 500px;
+  text-align: center;
+}
+
+.main-input input {
+  text-align: center;
+}
+
+.main-input img {
+  margin-top: 10px;
+}
+
+.nav-upper {
+  width: 100%;
+  display: flex;
+  padding: 51px 138px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 99;
+}
+
+.header-btn {
+  width: 120px;
+  height: 45px;
+  background-color: #0aaee4;
+  border: none;
+  border-radius: 10px;
+  color: lightcyan;
+  font-size: 20px;
+}
+
+.fav-info {
+  padding-right: 60px;
+  color: lightcyan;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 1.12px;
+}
+/*=========================== slider setting =====================================*/
+
+.slide {
+  width: 100%;
+  height: 800px;
+}
+
+.slide-item-1 {
+  background-image: url("../../../assets/imagine/header/vicher.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-item-2 {
+  background-image: url("../../../assets/imagine/header/hulk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-item-3 {
+  background-image: url("../../../assets/imagine/header/spider-man.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*=================================== Title setting===================================*/
+
+.title {
+  position: absolute;
+  right: 50%;
+  bottom: 5%;
+}
+
+.title h1 {
+  color: #ffffff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  padding-bottom: 27px;
+}
+
+.title p {
+  color: #ffffff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.96px;
+}
+
+.action {
+  position: relative;
+  left: 140%;
+  top: 15%;
+  display: flex;
+}
+
+.action a {
+  font-size: 20px;
+  color: lightcyan;
+}
+
+.action li {
+  list-style: none;
+  display: inline-block;
+}
+
+.action ul :first-child {
+  margin-right: 17px;
+}
+
+/*====================== @media setting=================================*/
+
+@media(min-width: 1600px) {
+  header{
+    max-width: 1600px;
+  }
+}
+
+@media(max-width: 1366px) {
+  .main-input{
+    width: 300px;
+  }
+}
+
+@media(max-width: 1080px) {
+  .main-input {
+    width: 500px;
+  }
+  .slide-item-1{
+    background-position: center;
+  }
+  .slide-item-2{
+    background-position: center;
+  }
+  .slide-item-3{
+    background-position: center;
+  }
+  header{
+    width: 750px;
+  }
+  .nav-upper-btn{
+    display: none;
+  }
+  .title p{
+    display: none;
+  }
+}
+
+@media(max-width: 800px) {
+  .nav-upper{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
