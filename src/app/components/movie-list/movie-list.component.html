@@ -1,5 +1,7 @@
 <section class="movie-list">
-  <div class="card" style="width: 18rem;" *ngFor="let movie of movieList">
+
+
+  <div class="card" style="width: 18rem;" *ngFor="let movie of movieList" (click)="showDetails(movie)"  placement="top" ngbTooltip="show details">
     <img class="card-img-top" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Card image cap">
     <div class="card-body">
       <div class="card-text">{{movie.title}}</div>

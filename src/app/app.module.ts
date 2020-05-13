@@ -7,6 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MovieListComponent} from './components/movie-list/movie-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     HeaderComponent,
     MovieListComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule,
